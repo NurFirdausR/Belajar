@@ -222,11 +222,6 @@
         var cart_hargabarang = []
 
         function tampil_cart() {
-            var qty = 0
-            var diskon = 0
-            var ph = 0
-            var totalharga = 0 
-
              cart_list.innerHTML="";   
             for (let x = 0; x <  cart_namabarang.length; x++) {
                 cart_list.innerHTML +=
@@ -249,7 +244,7 @@
                                                     '&emsp;'+
                                                     '<small>Quantity:</small>'+ 
                                                     '&emsp;'+
-                                                    '<small>'+qty+'</small>'+
+                                                    '<small>1</small>'+
                                             '</div>'+
                                             '<div class="col-2">'+
                                                 '<i class="fas fa-trash-alt trash" ></i>'+
@@ -259,14 +254,9 @@
                                 '</div>'+
                             '</td>'+
                         '</tr>'
-                                            if (cart_namabarang == 0){
-                                                cart_namabarang+=1
-                                            }else{
-                                                cart_namabarang = 0
-                                            }
                 
             }
-            console.log(cart_namabarang)
+            
         }
         tampil_product();
 
