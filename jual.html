@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        .size-image-product {
+            width: 170px;
+            height: 140px;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .price {
+            color: #337ccf;
+            font-family: Impact
+        }
+        .trash{
+            font-size: 40px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Bismillah</h1>
+            <p class="lead">Tahap 2</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <table class="table" border="1">
+                <thead>
+                    <tr>
+                        <th class="text-center" colspan="2">Take Away</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2"></th>
+                    </tr>
+                    <tr>
+                        <th class="text-center" colspan="2">Mang.Nur</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <div id="cart_list">
+                        <!-- <tr>
+                            <td colspan="2">
+                                <div class="card border-dark mb-3" style="max-width: 30rem;">
+                                    <div class="card-body text-dark">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <p class="card-text"><small>Eggsandwich</small>
+                                                    &emsp; &emsp;
+                                                    &emsp; &emsp;&emsp;
+                                                    &emsp; &emsp;&emsp;
+                                                     <small>Unit Price:</small> &emsp; <b>Rp</b><b>12000</b>
+                                                </p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="card-text">
+                                                    <b>Rp</b><b>12000</b>
+                                                    &emsp;
+                                                    <small>Quantity:</small> 
+                                                    &emsp;
+                                                    <small>1</small>
+                                            </div>
+                                            <div class="col-2">
+                                                <i class='fas fa-trash-alt trash' ></i>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </div>
+                    
+                    <tr>
+                        <td>
+
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td rowspan="2">
+                            <div class="card border-dark mb-3" style="max-width: 30rem; border: none;">
+                                <div class="card-body text-dark">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="card-text">Discount :</p> 
+                                            <p class="card-text"><b>Tax:</b></p>
+                                        </div>
+                                        <div class="col-6">                                                  
+                                            <p class="card-text" id="diskon">10%</p>
+                                            <p class="card-text"><b>Rp.</b><b id="harga">4500</b></p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row" style="background-color: rgb(55, 192, 255);">
+                                        <p class="card-text text-white">Total Amount:</p>
+                                        &emsp;&emsp;
+                                        &emsp;&emsp;
+                                        &emsp;&emsp;
+                                        &emsp;&emsp;&emsp;
+                                        <p class="card-text text-white">
+                                        <p class="text-white">Rp.</p>
+                                        <p class="text-white" id="total_harga">7500</p>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-7" id="list_product">
+            <!-- <div class="card float-left mr-1 mb-2" style="width: 11rem;">
+                <img src="img/eggsandwich.jpg" class="card-img-top size-image-product" alt="eggsandwich">
+                <div class="card-body">
+                    <h6><small>eggsandwich </small></h6>
+                    <p class="card-text price"><b>Rp. 7.300.000</b></p>
+                </div>
+            </div>
+            <div class="card float-left mr-1 mb-2" style="width: 11rem;">
+                <img src="img/Ham Cheese.jpeg" class="card-img-top size-image-product" alt="eggsandwich">
+                <div class="card-body">
+                    <h6><small>HamCheese </small> </h6>
+                    <p class="card-text price"><b>Rp. 7.300.000</b></p>
+                </div>
+            </div>
+            <div class="card float-left mr-1 mb-2" style="width: 11rem;">
+                <img src="img/LassiSalted.jpg" class="card-img-top size-image-product" alt="eggsandwich">
+                <div class="card-body">
+                    <h6><small>LassiSalted </small> </h6>
+                    <p class="card-text price"><b>Rp. 7.300.000</b></p>
+                </div>
+            </div>
+            <div class="card float-left mr-1 mb-2" style="width: 11rem;">
+                <img src="img/JuniorCHickenBurger.jpg" class="card-img-top size-image-product" alt="eggsandwich">
+                <div class="card-body">
+                    <h6><small>JuniorChickenBurger</small> </h6>
+                    <p class="card-text price"><b>Rp. 7.300.000</b></p>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var nama_product = ['Egg Sandwich','Ham Chicken','Ham Cheese','JuniorVegBurger','Masala Cola','Mutton Burger'];
+        var harga_product = [35000,45000,40000,30000,25000,37000];
+        var gambar_product = ['eggsandwich.jpg','HamChicken.png','HamCheese.jpg','JuniorVegBurger.jpeg','masalaCOla.jpg','MuttonBurger.jpg'];
+
+        var list_product = document.getElementById('list_product');
+
+        function tampil_product() {
+            list_product.innerHTML ="";
+            for (let i = 0; i < nama_product.length; i++) {
+                 list_product.innerHTML +=
+                 '<div class="card float-left mr-1 mb-2" style="width: 11rem;" onclick="addcart('+i+')" id="card">'+
+                '<img src="img/'+gambar_product[i]+'" class="card-img-top size-image-product" alt="'+nama_product[i]+'">'+
+                '<div class="card-body">'+
+                    '<h6><small>'+nama_product[i]+' </small></h6>'+
+                    '<p class="card-text price"><b>Rp.'+harga_product[i]+'</b></p>'+
+                '</div>'+
+            '</div>'
+                }
+        }
+            // $(document).ready(function () {
+            //     $('#card').on('click',addcart) 
+            //     function  addcart(id) {
+            //         cart_namabarang.push(nama_product[id])
+            //         cart_hargabarang.push(harga_product[id])
+            //     }
+            //     console.log(addcart);
+                
+
+            // });
+            function addcart(id) {
+                cart_namabarang.push(nama_product[id])
+              cart_hargabarang.push(harga_product[id])
+            tampil_cart();
+            }
+
+        var cart_list = document.getElementById('cart_list');
+        var diskon = document.getElementById('diskon');
+        var harga = document.getElementById('harga');
+        var total_harga = document.getElementById('total_harga');
+
+        var cart_namabarang = []
+        var cart_hargabarang = []
+
+        function tampil_cart() {
+            var qty = 0
+            var diskon = 0
+            var ph = 0
+            var totalharga = 0 
+
+             cart_list.innerHTML="";   
+            for (let x = 0; x <  cart_namabarang.length; x++) {
+                cart_list.innerHTML +=
+                        '<tr>'+ 
+                            '<td colspan="2">'+
+                                '<div class="card border-dark mb-3" style="max-width: 30rem;">'+
+                                    '<div class="card-body text-dark">'+
+                                        '<div class="row">'+
+                                            '<div class="col-7">'+
+                                                '<p class="card-text"><small>'+cart_namabarang[x]+'</small>'+
+                                                    '&emsp; &emsp;'+
+                                                    '&emsp; &emsp;&emsp;'+
+                                                    '&emsp; &emsp;&emsp;'+
+                                                     '<small>Unit Price:</small> &emsp; <b>Rp</b><b>'+cart_hargabarang[x]+'</b>'+
+                                                '</p>'+
+                                            '</div>'+
+                                            '<div class="col-3">'+
+                                                '<p class="card-text">'+
+                                                    '<b>Rp</b><b>'+cart_hargabarang[x]+'</b>'+
+                                                    '&emsp;'+
+                                                    '<small>Quantity:</small>'+ 
+                                                    '&emsp;'+
+                                                    '<small>'+qty+'</small>'+
+                                            '</div>'+
+                                            '<div class="col-2">'+
+                                                '<i class="fas fa-trash-alt trash" ></i>'+
+                                            '</div>'+
+                                        '</div> '+
+                                    '</div>'+
+                                '</div>'+
+                            '</td>'+
+                        '</tr>'
+                                            if (cart_namabarang == 0){
+                                                cart_namabarang+=1
+                                            }else{
+                                                cart_namabarang = 0
+                                            }
+                
+            }
+            console.log(cart_namabarang)
+        }
+        tampil_product();
+
+    </script>
